@@ -1,0 +1,38 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+
+$clr-vue-green:#40b884;
+$clr-back-ground:#35495e;
+$clr-text-black:#4b4d4b;
+
+@mixin text-section-title-first{
+  font-family: YuMincho, sans-serif;
+  font-size: 32px;
+  color: $clr-vue-green;
+}
+
+@mixin text-section-title{
+  font-family: YuMincho, sans-serif;
+  font-size: 32px;
+  color: $clr-text-black;
+}
+
+@mixin text-header-menu{
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: $clr-text-black;
+}
+
+.text-section-title-first{
+  @include text-section-title-first
+}
+
+.text-section-title{
+  @include text-section-title
+}
+
+.text-header-menu{
+  @include text-header-menu
+}

@@ -1,0 +1,6 @@
+$break-point--sp: 768px;
+@mixin sp(){
+  @media (max-width: $break-point--sp) {
+    @content
+  }
+}
