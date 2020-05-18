@@ -37,7 +37,9 @@ export default {
     border-style: solid;
     border-width: 200px 200px 0 0;
     border-color: #40b884 transparent transparent transparent;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   .p-first-card{
     margin-top: 50%;
