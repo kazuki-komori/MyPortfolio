@@ -34,16 +34,16 @@
   </v-footer>
 </template>
 <script>
-  export default {
-    data () {
-      return {
-        icons: [
-          'mdi-facebook',
-          'mdi-twitter'
-        ]
-      }
+export default {
+  data () {
+    return {
+      icons: [
+        'mdi-facebook',
+        'mdi-twitter'
+      ]
     }
   }
+}
 </script>
 <style lang="scss" scoped>
   @import "./assets/mixins";

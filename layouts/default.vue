@@ -9,14 +9,14 @@
 </template>
 
 <script>
-  import IHeader from '../components/Header'
-  import IFooter from '../components/Footer'
-  export default {
-    components: {
-      IHeader,
-      IFooter
-    }
+import IHeader from '../components/Header'
+import IFooter from '../components/Footer'
+export default {
+  components: {
+    IHeader,
+    IFooter
   }
+}
 </script>
 <style lang="scss" scoped>
   @import "./assets/mixins";
