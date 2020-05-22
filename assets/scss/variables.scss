@@ -2,6 +2,7 @@
 //
 // The variables you want to modify
 // $font-size-root: 20px;
+@import "./media";
 
 $clr-vue-green:#40b884;
 $clr-back-ground:#35495e;
@@ -9,14 +10,20 @@ $clr-text-black:#4b4d4b;
 
 @mixin text-section-title-first{
   font-family: YuMincho, sans-serif;
-  font-size: 32px;
+  font-size: 65px;
   color: $clr-vue-green;
+  @include sp{
+    font-size: 50px;
+  }
 }
 
 @mixin text-section-title{
   font-family: YuMincho, sans-serif;
-  font-size: 32px;
+  font-size: 50px;
   color: $clr-text-black;
+  @include sp{
+    font-size: 36px;
+  }
 }
 
 @mixin text-header-menu{
@@ -25,14 +32,40 @@ $clr-text-black:#4b4d4b;
   color: $clr-text-black;
 }
 
+@mixin text-body{
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  color: $clr-text-black;
+  font-weight: bold;
+  margin-bottom: 30px;
+  @include sp{
+    font-size: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+.c-v_line{
+  border-left: thick solid $clr-vue-green;
+  padding: 0 13px;
+  display: inline-block;
+}
+
 .text-section-title-first{
   @include text-section-title-first
 }
 
 .text-section-title{
-  @include text-section-title
+  @include text-section-title;
+  padding: 10px 10px;
+  @include sp{
+    padding: 0 10px;
+  }
 }
 
 .text-header-menu{
   @include text-header-menu
+}
+
+.text-body{
+  @include text-body;
 }
