@@ -9,7 +9,8 @@
       <div class="c-section_container">
         <v-card-text>
           <p class="text-body">
-            団体・インターンなどでの活動歴の一覧です。
+            ご依頼・ご要望・お気づきの点などありましたら、
+            お気軽に下記フォームよりお願い致します。
           </p>
         </v-card-text>
       </div>

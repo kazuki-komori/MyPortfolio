@@ -8,9 +8,22 @@
       </div>
       <div class="c-section_container">
         <v-card-text>
-          <p class="text-body">
-            団体・インターンなどでの活動歴の一覧です。
-          </p>
+          <div class="p-github-title">
+            <p class="text-body">
+              過去の制作物の一覧です。
+            </p>
+            <span class="p-github-btn">
+              <v-btn
+                color="#24292E"
+                class="ma-2 white--text"
+                large
+                href="https://github.com/kazuki-komori"
+              >
+                Githubへ
+                <v-icon right dark>mdi-cloud-upload</v-icon>
+              </v-btn>
+            </span>
+          </div>
         </v-card-text>
       </div>
     </v-card>
@@ -22,4 +35,15 @@ export default {
 </script>
 <style lang="scss" scoped>
   @import "../assets/mixins";
+  .p-github-title{
+    display: flex;
+    @include sp{
+      display: block;
+    }
+  }
+  .p-github-btn{
+    padding-left: 10%;
+    @include sp{
+    }
+  }
 </style>

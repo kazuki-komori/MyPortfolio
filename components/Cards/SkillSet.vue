@@ -21,12 +21,12 @@
           <span class="text-sub-section-title-first">F</span>or Web Engineer
         </span>
         <v-row justify="space-between">
-          <v-col v-for="card in cards" :key="card" cols="md-4">
+          <v-col v-for="card in cards" :key="card.rate" cols="md-4">
             <v-card width="100%" height="100%" class="d-flex" tile>
               <div class="c-section_container">
                 <v-img class="p-section_img" width="200" height="200" :src="card.image" />
                 <div class="text-center p-rate">
-                  <v-rating background-color="orange lighten-3" color="orange" :value="card.rate" readonly="true" />
+                  <v-rating background-color="orange lighten-3" color="orange" :value="card.rate" readonly />
                 </div>
               </div>
             </v-card>
@@ -38,12 +38,12 @@
           <span class="text-sub-section-title-first">F</span>or Statistics
         </span>
         <v-row justify="space-between">
-          <v-col v-for="card in cards" :key="card" cols="md-4">
+          <v-col v-for="card in cards" :key="card.rate" cols="md-4">
             <v-card width="100%" height="100%" class="d-flex" tile>
               <div class="c-section_container">
                 <v-img class="p-section_img" width="200" height="200" :src="card.image" />
                 <div class="text-center p-rate">
-                  <v-rating background-color="orange lighten-3" color="orange" :value="card.rate" readonly="true" />
+                  <v-rating background-color="orange lighten-3" color="orange" :value="card.rate" readonly />
                 </div>
               </div>
             </v-card>
@@ -58,9 +58,9 @@ export default {
   data () {
     return {
       cards: [
-        { image: 'https://cdn.vuetifyjs.com/images/cards/store.jpg', rate: '3' },
-        { image: 'https://cdn.vuetifyjs.com/images/cards/store.jpg', rate: '3' },
-        { image: 'https://cdn.vuetifyjs.com/images/cards/store.jpg', rate: '3' }
+        { image: 'https://cdn.vuetifyjs.com/images/cards/store.jpg', rate: 3 },
+        { image: 'https://cdn.vuetifyjs.com/images/cards/store.jpg', rate: 3 },
+        { image: 'https://cdn.vuetifyjs.com/images/cards/store.jpg', rate: 3 }
       ]
     }
   }

@@ -12,25 +12,40 @@
             団体・インターンなどでの活動歴の一覧です。
           </p>
           <v-container fluid>
-            <v-timeline dense>
+            <v-timeline dense class="p-timeline">
               <v-timeline-item
-                fill-dot="fill-dot"
-                right
                 v-for="n in 3"
                 :key="n"
+                fill-dot="fill-dot"
+                right
                 color="orange"
               >
                 <template v-slot:opposite>
                   <span>Tus eu perfecto</span>
                 </template>
-                <v-card class="elevation-2">
-                  <v-card-title class="headline text-body">Lorem ipsum</v-card-title>
+                <v-card class="elevation-1">
+                  <v-card-title class="headline text-body">
+                    Lorem ipsum
+                  </v-card-title>
                   <v-card-text class="p-contribution">
                     Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.
                   </v-card-text>
                 </v-card>
               </v-timeline-item>
             </v-timeline>
+            <div class="p-sp-timeline">
+              <v-card
+                class="elevation-2"
+                v-for="n in 3"
+                :key="n">
+                <v-card-title class="headline text-body">
+                  Lorem ipsum
+                </v-card-title>
+                <v-card-text class="p-contribution">
+                  Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.
+                </v-card-text>
+              </v-card>
+            </div>
           </v-container>
         </v-card-text>
       </div>
@@ -50,5 +65,19 @@ export default {
   }
   .p-contribution{
     padding-top: 20px;
+  }
+  .p-timeline{
+    @include sp{
+      display: none;
+    }
+  }
+  .p-sp-timeline{
+    display: none;
+    @include sp{
+      display: block;
+    }
+  }
+  .elevation-2{
+    margin-bottom: 20px;
   }
 </style>
