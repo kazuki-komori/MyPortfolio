@@ -1,6 +1,6 @@
 <template>
-  <div class="c-container raised hoge">
-    <v-card width="100%" height="100%" light class="p-last-card ">
+  <div class="c-container raised">
+    <v-card width="100%" height="100%" light>
       <div class="c-section_container">
         <v-card-title class="c-section_title c-v_line text-section-title">
           <span class="text-section-title-first">S</span>kill Set
@@ -24,9 +24,9 @@
           <v-col v-for="card in cards" :key="card" cols="md-4">
             <v-card width="100%" height="100%" class="d-flex" tile>
               <div class="c-section_container">
-                <v-img class="p-section_img" width="200" height="200" :src="card.image"></v-img>
+                <v-img class="p-section_img" width="200" height="200" :src="card.image" />
                 <div class="text-center p-rate">
-                  <v-rating background-color="orange lighten-3" color="orange" :value="card.rate" readonly="true"></v-rating>
+                  <v-rating background-color="orange lighten-3" color="orange" :value="card.rate" readonly="true" />
                 </div>
               </div>
             </v-card>
@@ -41,9 +41,9 @@
           <v-col v-for="card in cards" :key="card" cols="md-4">
             <v-card width="100%" height="100%" class="d-flex" tile>
               <div class="c-section_container">
-                <v-img class="p-section_img" width="200" height="200" :src="card.image"></v-img>
+                <v-img class="p-section_img" width="200" height="200" :src="card.image" />
                 <div class="text-center p-rate">
-                  <v-rating background-color="orange lighten-3" color="orange" :value="card.rate" readonly="true"></v-rating>
+                  <v-rating background-color="orange lighten-3" color="orange" :value="card.rate" readonly="true" />
                 </div>
               </div>
             </v-card>
@@ -82,12 +82,6 @@ export default {
     font-size: 25px;
     @include sp{
       font-size: 18px;
-    }
-  }
- .p-last-card{
-    margin-bottom: 20%;
-    @include sp{
-      margin-bottom: 55%;
     }
   }
   .p-sub-container{

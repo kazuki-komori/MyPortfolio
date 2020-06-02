@@ -13,16 +13,25 @@
     </div>
     <About-me />
     <Skill-set />
+    <Belongs />
+    <Products />
+    <Contact />
   </v-layout>
 </template>
 
 <script>
 import AboutMe from '../components/Cards/AboutMe'
 import SkillSet from '../components/Cards/SkillSet'
+import Belongs from '../components/Belongs'
+import Products from '../components/Products'
+import Contact from '../components/Contact'
 export default {
   components: {
     AboutMe,
-    SkillSet
+    SkillSet,
+    Belongs,
+    Products,
+    Contact
   }
 }
 </script>
