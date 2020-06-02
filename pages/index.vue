@@ -11,60 +11,18 @@
         Welcome to My Portfolio
       </p>
     </div>
-    <div class="c-container p-first-card raised">
-      <v-card width="100%" height="100%" light>
-        <div class="c-section_container">
-          <v-card-title class="c-section_title c-v_line text-section-title">
-            <span class="text-section-title-first">A</span>bout Me
-          </v-card-title>
-        </div>
-        <div class="c-section_container">
-          <v-card-text>
-            <v-row>
-              <v-col cols="sm-3">
-                <v-img src="https://cdn.vuetifyjs.com/images/cards/server-room.jpg" />
-              </v-col>
-              <v-col class="c-text_container">
-                <p class="text-body p-name">
-                  小森 一輝 / Kazuki Komori
-                </p>
-                <p class="text-body">
-                  大学：同志社大学 文化情報学部 2回
-                </p>
-                <p class="text-body">
-                  専門：統計学・データサイエンス
-                </p>
-                <p class="text-body">
-                  WEBエンジニア歴：フロントエンド・バックエンドエンジニア（実務経験7ヶ月）
-                </p>
-              </v-col>
-            </v-row>
-            <span class="c-text_container">
-              <p class="text-body p-purpose">Web系エンジニア ✕ データサイエンスを用いたビジネスの実践</p>
-            </span>
-          </v-card-text>
-        </div>
-      </v-card>
-    </div>
-    <div class="c-container last-card raised">
-      <v-card width="100%" height="500px" light>
-        <div class="c-section_container">
-          <v-card-title class="c-section_title c-v_line text-section-title">
-            <span class="text-section-title-first">A</span>bout Me
-          </v-card-title>
-        </div>
-        <div class="c-section_container">
-          <p>hogehoge</p>
-        </div>
-      </v-card>
-    </div>
+    <About-me />
+    <Skill-set />
   </v-layout>
 </template>
 
 <script>
-
+import AboutMe from '../components/Cards/AboutMe'
+import SkillSet from '../components/Cards/SkillSet'
 export default {
   components: {
+    AboutMe,
+    SkillSet
   }
 }
 </script>
@@ -95,29 +53,6 @@ export default {
     @include sp{
       text-align: center;
       font-size: 35px;
-    }
-  }
-  .p-first-card{
-    margin-top: 20%;
-  }
-  .last-card{
-    margin-bottom: 20%;
-  }
-  .p-mb{
-    display: block;
-    margin-bottom: 3rem;
-  }
-  .p-name{
-    font-size: 30px;
-    @include sp{
-      font-size: 18px;
-    }
-  }
-  .p-purpose{
-    text-align: center;
-    font-size: 22px;
-    @include sp{
-      font-size: 13px;
     }
   }
 </style>
