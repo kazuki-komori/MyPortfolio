@@ -8,7 +8,7 @@
     <span class="triangle" />
     <div class="c-container p-title">
       <p class="t-title">
-        Welcome to My Portfolio
+        Welcome to Kazuki's Portfolio
       </p>
     </div>
     <About-me />

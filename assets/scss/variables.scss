@@ -16,6 +16,14 @@ $clr-text-black:#4b4d4b;
     font-size: 50px;
   }
 }
+@mixin text-sub-section-title-first{
+  font-family: YuMincho, sans-serif;
+  font-size: 50px;
+  color: $clr-vue-green;
+  @include sp{
+    font-size: 35px;
+  }
+}
 
 @mixin text-section-title{
   font-family: YuMincho, sans-serif;
@@ -23,6 +31,14 @@ $clr-text-black:#4b4d4b;
   color: $clr-text-black;
   @include sp{
     font-size: 36px;
+  }
+}
+@mixin text-sub-section-title{
+  font-family: YuMincho, sans-serif;
+  font-size: 35px;
+  color: $clr-text-black;
+  @include sp{
+    font-size: 21px;
   }
 }
 
@@ -54,8 +70,19 @@ $clr-text-black:#4b4d4b;
   @include text-section-title-first
 }
 
+.text-sub-section-title-first{
+  @include text-sub-section-title-first
+}
+
 .text-section-title{
   @include text-section-title;
+  padding: 10px 10px;
+  @include sp{
+    padding: 0 10px;
+  }
+}
+.text-sub-section-title{
+  @include text-sub-section-title;
   padding: 10px 10px;
   @include sp{
     padding: 0 10px;
