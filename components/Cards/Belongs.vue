@@ -57,7 +57,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  @import "../assets/mixins";
+  @import "../../assets/mixins";
   .headline{
     background-color: $clr-vue-green;
     color: white;

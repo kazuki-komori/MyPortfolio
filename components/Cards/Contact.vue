@@ -22,7 +22,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  @import "../assets/mixins";
+  @import "../../assets/mixins";
   .p-last-card{
     margin-bottom: 20%;
     @include sp{

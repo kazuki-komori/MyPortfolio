@@ -22,9 +22,9 @@
 <script>
 import AboutMe from '../components/Cards/AboutMe'
 import SkillSet from '../components/Cards/SkillSet'
-import Belongs from '../components/Belongs'
-import Products from '../components/Products'
-import Contact from '../components/Contact'
+import Belongs from '../components/Cards/Belongs'
+import Products from '../components/Cards/Products'
+import Contact from '../components/Cards/Contact'
 export default {
   components: {
     AboutMe,

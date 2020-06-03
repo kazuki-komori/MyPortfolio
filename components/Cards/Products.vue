@@ -34,7 +34,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  @import "../assets/mixins";
+  @import "../../assets/mixins";
   .p-github-title{
     display: flex;
     @include sp{
