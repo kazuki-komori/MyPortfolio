@@ -151,7 +151,10 @@ export default {
   }),
   methods: {
     async sendMsg (name, email, subjects, contents) {
-      const res = await SendLine(name, email, subjects, contents)
+      const token = process.env.LINE_ACCESS_TOKEN
+      const url = process.env.LINE_URL
+      const group = process.env.LINE_TO
+      const res = await SendLine(name, email, subjects, contents, token, url, group)
       console.log(res)
     }
   }

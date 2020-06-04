@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { LineMsg } from './LineBock'
 
-export const SendLine = async (name, email, subjects, contents) => {
+export const SendLine = async (name, email, subjects, contents, token, url, group) => {
   const Now = () => {
     const date = new Date()
     const Month = date.getMonth()
@@ -17,7 +17,7 @@ export const SendLine = async (name, email, subjects, contents) => {
   const block = LineMsg(Now, name, email, subjects, contents)
   console.log(block)
   const params = {
-    to: process.env.LINE_TO,
+    to: group,
     messages: [{
       type: 'flex',
       altText: 'ポートフォリオからのからの通知です',
@@ -27,9 +27,9 @@ export const SendLine = async (name, email, subjects, contents) => {
   console.log(params)
   try {
     const { status } = await axios.post(
-      process.env.LINE_URL,
+      url,
       params,
-      { headers: { 'Content-Type': 'application/json; charset=UTF-8', Authorization: 'Bearer ' + process.env.LINE_ACCESS_TOKEN } })
+      { headers: { 'Content-Type': 'application/json; charset=UTF-8', Authorization: 'Bearer ' + token } })
     console.log(status)
     return status
   } catch (e) {
