@@ -125,7 +125,7 @@
   </div>
 </template>
 <script>
-import { SendLine } from '../../plugins/SendLine'
+import { SendLine } from '../../pages/service/SendLine'
 export default {
   data: () => ({
     valid: false,
