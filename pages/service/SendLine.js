@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { LineMsg } from './LineBock'
 
-module.exports = async (name, email, subjects, contents, token, url, group) => {
+export const SendLine = async (name, email, subjects, contents, token, url, group) => {
   const Now = () => {
     const date = new Date()
     const Month = date.getMonth()
