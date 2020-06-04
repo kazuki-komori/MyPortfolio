@@ -56,7 +56,7 @@
                 <v-img class="p-section_img" height="100" width="350" src="https://www.python.org/static/community_logos/python-logo-inkscape.svg" />
                 <v-img class="p-section_img__sp" width="120" src="https://www.python.org/static/community_logos/python-logo-inkscape.svg" />
                 <div class="text-center p-rate">
-                  <v-rating background-color="orange lighten-3" color="orange" value="2" readonly />
+                  <v-rating background-color="orange lighten-3" color="orange" :value="2" readonly />
                 </div>
               </div>
             </v-card>
@@ -94,22 +94,6 @@ export default {
 </script>
 <style lang="scss" scoped>
   @import "../../assets/mixins";
-  .p-first-card{
-    margin-top: 20%;
-  }
-  .p-purpose{
-    text-align: center;
-    font-size: 22px;
-    @include sp{
-      font-size: 13px;
-    }
-  }
-  .p-name{
-    font-size: 25px;
-    @include sp{
-      font-size: 18px;
-    }
-  }
   .p-sub-container{
     padding-top: 0;
   }

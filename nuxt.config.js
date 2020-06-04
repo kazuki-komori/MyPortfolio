@@ -30,6 +30,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '@/plugins/SanitizeHTML' }
   ],
   /*
   ** Nuxt.js dev-modules

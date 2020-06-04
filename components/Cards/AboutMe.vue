@@ -10,7 +10,7 @@
         <v-card-text>
           <v-row>
             <v-col cols="sm-3">
-              <v-img src="https://cdn.vuetifyjs.com/images/cards/server-room.jpg" />
+              <v-img :src="myPicture" height="200" width="200" />
             </v-col>
             <v-col class="c-text_container">
               <p class="text-body p-name">
@@ -36,7 +36,13 @@
   </div>
 </template>
 <script>
-export default {}
+export default {
+  data () {
+    return {
+      myPicture: require('../../assets/image/mike.jpg')
+    }
+  }
+}
 </script>
 <style lang="scss" scoped>
   @import "../../assets/mixins";
