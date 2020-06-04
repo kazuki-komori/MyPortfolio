@@ -1,2 +1,6 @@
 [build.environment]
 GAS_URL="https://script.google.com/macros/s/AKfycbymGDmsvz5Q6-_BrRT9TokePISUPWVEAPynbpHYrGVxc_WNS-0/exec"
+LINE_ACCESS_TOKEN = "zehvtNeD9ybmDNy0FqBEunaT7SLQaTGGAITvN0FTR+Qr2kr55aTHTn9SFwUXghhXSp6fpP9wXi1o4VjeqtLTqdfIPiFQjIguSh3Py+wJg2ZThycCh6ep/jtwJ0xOrC8hdbPd8y/0rAljVvwz8swxmwdB04t89/1O/w1cDnyilFU="
+LINE_URL = "https://api.line.me/v2/bot/message/push"
+LINE_TO = "U6f58caafb5ba2b9b5f8e70cf73ce2c84"
+

@@ -77,6 +77,7 @@ export default {
         { image: require('../../assets/image/CardLogo/google-apps-script.svg'), rate: 4, height: 200, width: 200 },
         { image: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg', rate: 3, height: 200, width: 350 },
         { image: require('../../assets/image/CardLogo/javascript.svg'), rate: 3, height: 200, width: 200 },
+        { image: require('../../assets/image/CardLogo/bolt-js-logo.svg'), rate: 3, height: 200, width: 200 },
         { image: require('../../assets/image/CardLogo/ts.svg'), rate: 2, height: 200, width: 200 },
         { image: 'https://www.php.net/images/logos/new-php-logo.svg', rate: 2, height: 200, width: 400 },
         { image: require('../../assets/image/CardLogo/laravel-logo.png'), rate: 2, height: 200, width: 200 },

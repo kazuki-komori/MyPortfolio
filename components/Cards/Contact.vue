@@ -111,7 +111,7 @@
                     :disabled="!valid"
                     color="#40b8832a"
                     width="250"
-                    @click="validate( name, email, subjects, content)"
+                    @click="sendMsg( name, email, subjects, content)"
                   >
                     送信
                   </v-btn>
@@ -125,7 +125,7 @@
   </div>
 </template>
 <script>
-import axios from 'axios'
+import { SendLine } from '../../plugins/SendLine'
 export default {
   data: () => ({
     valid: false,
@@ -150,27 +150,9 @@ export default {
     ]
   }),
   methods: {
-    async validate (name, email, subjects, contents) {
-      const params = {
-        name,
-        email,
-        subjects,
-        contents
-      }
-      console.log(process.env.GAS_URL)
-      const { status } = await axios.post(process.env.GAS_URL, params, { headers: { 'Content-Type': 'application/json' } })
-      console.log(status)
-    },
-    async send (name, email, subjects, contents) {
-      const params = {
-        name,
-        email,
-        subjects,
-        contents
-      }
-      console.log(params)
-      const { status } = await axios.post(process.env.GAS_URL, params, { headers: { 'Content-Type': 'application/json' } })
-      console.log(status)
+    async sendMsg (name, email, subjects, contents) {
+      const res = await SendLine(name, email, subjects, contents)
+      console.log(res)
     }
   }
 }
