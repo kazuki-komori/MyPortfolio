@@ -1,5 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
 
+const { GAS_URL } = process.env
 export default {
   mode: 'universal',
   /*
@@ -51,6 +52,9 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv'
   ],
+  env: {
+    GAS_URL
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
