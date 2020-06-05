@@ -1,5 +1,5 @@
 <template>
-  <div class="c-container raised" id="Contact">
+  <div id="Contact" class="c-container raised">
     <v-card width="100%" height="100%" light class="p-last-card ">
       <div class="c-section_container">
         <v-card-title class="c-section_title c-v_line text-section-title">

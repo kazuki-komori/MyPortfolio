@@ -5,7 +5,7 @@
     align-center
     class="page"
   >
-    <span class="triangle" id="Top" />
+    <span id="Top" class="triangle" />
     <div class="c-container p-title">
       <p class="t-title">
         Welcome to Kazuki's Portfolio
