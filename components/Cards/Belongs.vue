@@ -1,5 +1,5 @@
 <template>
-  <div id="Belongs" class="c-container raised">
+  <div id="Belongs" class="c-container raised" data-aos="fade-up">
     <v-card width="100%" height="100%" light>
       <div class="c-section_container">
         <v-card-title class="c-section_title c-v_line text-section-title">
@@ -16,6 +16,8 @@
               <v-timeline-item
                 v-for="card in timeline"
                 :key="card.title"
+                data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
                 fill-dot="fill-dot"
                 right
                 color="orange"

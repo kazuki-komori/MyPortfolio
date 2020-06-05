@@ -1,5 +1,5 @@
 <template>
-  <div id="About" class="c-container p-first-card raised">
+  <div id="About" class="c-container p-first-card raised" data-aos="fade-up">
     <v-card width="100%" height="100%" light>
       <div class="c-section_container">
         <v-card-title class="c-section_title c-v_line text-section-title">

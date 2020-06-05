@@ -32,7 +32,8 @@ export default {
   */
   plugins: [
     { src: '@/plugins/SanitizeHTML' },
-    { src: '@/plugins/VueScrollTo' }
+    { src: '@/plugins/VueScrollTo' },
+    { src: '@/plugins/AOS', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules

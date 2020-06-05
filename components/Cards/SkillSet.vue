@@ -1,5 +1,5 @@
 <template>
-  <div id="SkillSet" class="c-container raised">
+  <div id="SkillSet" class="c-container raised" data-aos="fade-up">
     <v-card width="100%" height="100%" light>
       <div class="c-section_container">
         <v-card-title class="c-section_title c-v_line text-section-title">
@@ -9,7 +9,7 @@
       <div class="c-section_container">
         <v-card-text>
           <p class="text-body">
-            実務経験をによる「使えるスキル」を習得しています。
+            実務経験による「使えるスキル」を習得しています。
           </p>
           <p class="text-body">
             また、大学での統計学の学習により、より専門的な知識を習得しています。
