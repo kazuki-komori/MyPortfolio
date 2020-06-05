@@ -1,9 +1,8 @@
 <template>
   <v-toolbar color="#60C799" flat class="header">
-    <v-app-bar-nav-icon class="nav-icon" />
-    <v-toolbar-title>Navigation</v-toolbar-title>
+    <v-toolbar-title class="navigation">Navigation</v-toolbar-title>
     <v-spacer />
-    <v-card flat class="tabs" color="#60C799">
+    <v-card flat class="tabs">
       <v-tabs right>
         <v-tab v-scroll-to="'#Top'">Top</v-tab>
         <v-tab v-scroll-to="'#About'">About</v-tab>
@@ -19,7 +18,7 @@
 export default {
 }
 </script>
-<style>
+<style lang="scss">
 .v-slide-group__wrapper{
   background-color: #60C799;
 }
@@ -32,11 +31,11 @@ export default {
   z-index: 5;
 }
 @media (max-width: 768px) {
-  .tabs{
+  .v-tabs:not(.v-tabs--vertical).v-tabs--right > .v-slide-group--is-overflowing.v-tabs-bar--is-mobile:not(.v-tabs-bar--show-arrows):not(.v-slide-group--has-affixes) .v-slide-group__next{
     display: none;
   }
-  .nav-icon{
-    display: block;
+  .navigation{
+    display: none;
   }
 }
 </style>
