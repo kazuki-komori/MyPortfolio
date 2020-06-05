@@ -10,6 +10,8 @@ https://kazuki-komori-portfolio.netlify.app/
 
 ドメイン更新 2021 6/5
 
+https://koazuki-komori.tk/
+
 ## Build Setup
 
 ```bash
