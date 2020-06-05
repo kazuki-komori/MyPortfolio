@@ -140,7 +140,7 @@ export default {
     name: '',
     nameRules: [
       v => !!v || '氏名は必須項目です',
-      v => (v && v.length <= 10) || '氏名は10文字以内でお願いします'
+      v => (v && v.length <= 20) || '氏名は20文字以内でお願いします'
     ],
     email: '',
     emailRules: [
@@ -154,7 +154,7 @@ export default {
     content: '',
     contentRules: [
       v => !!v || '内容は必須項目です',
-      v => (v && v.length >= 20) || '内容は20文字以上でお願いします'
+      v => (v && v.length >= 10) || '内容は10文字以上でお願いします'
     ]
   }),
   methods: {
