@@ -8,6 +8,8 @@
 
 https://kazuki-komori-portfolio.netlify.app/
 
+ドメイン更新 2021 6/5
+
 ## Build Setup
 
 ```bash
