@@ -31,7 +31,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '@/plugins/SanitizeHTML' }
+    { src: '@/plugins/SanitizeHTML' },
+    { src: '@/plugins/VueScrollTo' }
   ],
   /*
   ** Nuxt.js dev-modules

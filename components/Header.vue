@@ -5,10 +5,12 @@
     <v-spacer />
     <v-card flat class="tabs" color="#60C799">
       <v-tabs right>
-        <v-tab>About</v-tab>
-        <v-tab>Belongs</v-tab>
-        <v-tab>Products</v-tab>
-        <v-tab>Contact</v-tab>
+        <v-tab v-scroll-to="'#Top'">Top</v-tab>
+        <v-tab v-scroll-to="'#About'">About</v-tab>
+        <v-tab v-scroll-to="'#SkillSet'">Skill Set</v-tab>
+        <v-tab v-scroll-to="'#Belongs'">Belongs</v-tab>
+        <v-tab v-scroll-to="'#Products'">Products</v-tab>
+        <v-tab v-scroll-to="'#Contact'">Contact</v-tab>
       </v-tabs>
     </v-card>
   </v-toolbar>
@@ -18,9 +20,9 @@ export default {
 }
 </script>
 <style>
-  .v-slide-group__wrapper{
-    background-color: #60C799;
-  }
+.v-slide-group__wrapper{
+  background-color: #60C799;
+}
 .nav-icon{
   display: none;
 }
