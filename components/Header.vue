@@ -1,7 +1,7 @@
 <template>
   <v-toolbar color="#60C799" flat class="header">
     <v-toolbar-title class="navigation">
-      Navigation {{ screenWidth }}
+      Navigation
     </v-toolbar-title>
     <v-spacer />
     <v-card flat class="tabs">
