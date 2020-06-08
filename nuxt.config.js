@@ -58,6 +58,7 @@ export default {
   sitemap: {
     path: '/sitemap.xml',
     hostname: 'https://kazuki-komori.tk',
+    exclude: []
   },
   env: {
     GAS_URL
