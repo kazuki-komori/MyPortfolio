@@ -52,14 +52,8 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/dotenv'
   ],
-  sitemap: {
-    path: '/sitemap.xml',
-    hostname: 'https://kazuki-komori.tk',
-    exclude: []
-  },
   env: {
     GAS_URL
   },
