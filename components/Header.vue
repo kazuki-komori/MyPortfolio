@@ -54,21 +54,21 @@ export default {
           this.tab = 'SkillSet'
         } else if (num > 4600 && num <= 5700) {
           this.tab = 'Belongs'
-        } else if (num > 5700 && num <= 6300) {
+        } else if (num > 5700 && num <= 6600) {
           this.tab = 'Products'
         } else {
           this.tab = 'Contact'
         }
       } else if (this.deviceType === 'tablet') {
-        if (num <= 900 && num >= 250) {
+        if (num <= 600 && num >= 250) {
           this.tab = 'About'
         } else if (num < 250) {
           this.tab = 'Top'
-        } else if (num > 900 && num <= 4200) {
+        } else if (num > 600 && num <= 2400) {
           this.tab = 'SkillSet'
-        } else if (num > 4200 && num <= 5400) {
+        } else if (num > 2400 && num <= 3500) {
           this.tab = 'Belongs'
-        } else if (num > 5400 && num <= 5600) {
+        } else if (num > 3500 && num <= 4600) {
           this.tab = 'Products'
         } else {
           this.tab = 'Contact'

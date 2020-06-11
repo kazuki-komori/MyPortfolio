@@ -7,6 +7,7 @@
 $clr-vue-green:#40b884;
 $clr-back-ground:#35495e;
 $clr-text-black:#4b4d4b;
+$clr-white: #ffffff;
 
 @mixin text-section-title-first{
   font-family: YuMincho, sans-serif;
@@ -95,4 +96,8 @@ $clr-text-black:#4b4d4b;
 
 .text-body{
   @include text-body;
+}
+
+.color-white{
+  color: $clr-white;
 }
