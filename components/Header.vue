@@ -73,6 +73,20 @@ export default {
         } else {
           this.tab = 'Contact'
         }
+      } else if (this.deviceType === 'smartPhone') {
+        if (num <= 600 && num >= 250) {
+          this.tab = 'About'
+        } else if (num < 250) {
+          this.tab = 'Top'
+        } else if (num > 600 && num <= 4000) {
+          this.tab = 'SkillSet'
+        } else if (num > 4000 && num <= 5200) {
+          this.tab = 'Belongs'
+        } else if (num > 5200 && num <= 6500) {
+          this.tab = 'Products'
+        } else {
+          this.tab = 'Contact'
+        }
       }
     },
     calculateScrollY () {
@@ -83,7 +97,7 @@ export default {
       this.screenWidth = document.body.clientWidth
       if (this.screenWidth > 1900) {
         this.deviceType = 'PC'
-      } else if (this.screenWidth > 1000 || this.screenWidth <= 1900) {
+      } else if (this.screenWidth > 1000 && this.screenWidth <= 1900) {
         this.deviceType = 'tablet'
       } else {
         this.deviceType = 'smartPhone'
