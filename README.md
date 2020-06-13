@@ -1,6 +1,6 @@
 # MyPortfolio
 
-> My fine Nuxt.js project
+> Created by Nuxt.js
 
 ## Netlify build
 
@@ -10,7 +10,7 @@ https://kazuki-komori-portfolio.netlify.app/
 
 ドメイン更新 2021/6/5
 
-https://koazuki-komori.tk/
+https://kazuki-komori.tk/
 
 ## Build Setup
 
