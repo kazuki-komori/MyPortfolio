@@ -95,9 +95,9 @@ export default {
     },
     handleResize () {
       this.screenWidth = document.body.clientWidth
-      if (this.screenWidth > 1900) {
+      if (this.screenWidth >= 1440) {
         this.deviceType = 'PC'
-      } else if (this.screenWidth > 1000 && this.screenWidth <= 1900) {
+      } else if (this.screenWidth > 1000 && this.screenWidth < 1440) {
         this.deviceType = 'tablet'
       } else {
         this.deviceType = 'smartPhone'
