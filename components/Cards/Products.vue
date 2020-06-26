@@ -33,8 +33,6 @@
               <v-card
                 :color="item.color"
                 dark
-                data-aos="fade-up"
-                data-aos-anchor-placement="bottom-bottom"
               >
                 <div class="p-card-contents flex-no-wrap justify-space-between">
                   <div>
